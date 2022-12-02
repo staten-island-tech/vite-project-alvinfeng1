@@ -48,3 +48,4 @@ const presidents = [
     age: "61",
   },
 ];
+console.log(presidents);
