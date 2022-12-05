@@ -1,15 +1,31 @@
 body, 
-html {
-  background-color: blue;
-}
-body.dark-theme {
-  color: #eee;
-  background: #121212;
+html,
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 25px;
 }
 
-a {
-  color: #0033cc;
+#btn,
+#btn:link,
+#btn:visited {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-top: 10px auto;
 }
-body.dark-theme a {
-  color: #809fff;
+#btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 1rem rgb(28, 22, 22);
+}
+#btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgb(29, 21, 21);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
