@@ -12,10 +12,9 @@ html,
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   display: inline-block;
   border-radius: 1rem;
-  margin-top: 10px auto;
 }
 .btn:hover {
   transform: translateX(-0.3rem);
@@ -35,7 +34,7 @@ html,
   --gray: #252c30;
   
   --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --secondary: var(--dark-blue); 
   
   --h1: 7rem;
   --h2: 5rem;
@@ -44,11 +43,11 @@ html,
   --h5: 1rem;
 }
 .warm {
-  --primary: var var(--light-red);
-  --secondary: var(var(--dark-red));
+  --primary:  var(--light-red);
+  --secondary: var(--dark-red);
 }
 .cool {
-  --primary: var (var(--light-blue));
+  --primary:  var(--light-blue);
   --secondary: var(--dark-blue);
 }
 .hero {
@@ -60,17 +59,17 @@ html,
   height:90vh;
 }
 h1 {
-  font-size: var (--h1);
+  font-size: var(--h1);
 }
 h2 {
-  font-size: var (--h2);
+  font-size: var(--h2);
 }
 h3 {
-  font-size: var (--h3);
+  font-size: var(--h3);
 }
 h4 {
-  font-size: var (--h4);
+  font-size: var(--h4);
 }
 h5 {
-  font-size: var (--h5);
+  font-size: var(--h5);
 }
