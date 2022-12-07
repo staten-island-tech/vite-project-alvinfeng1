@@ -8,20 +8,20 @@ html,
   text-align: center;
 }
 
-#btn,
-#btn:link,
-#btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   padding: 0.5rem 1rem;
   display: inline-block;
   border-radius: 1rem;
   margin-top: 10px auto;
 }
-#btn:hover {
+.btn:hover {
   transform: translateX(-0.3rem);
   box-shadow: 0 1rem 1rem rgb(28, 22, 22);
 }
-#btn:active {
+.btn:active {
   transform: translateX(-1px);
   box-shadow: 0 0.5rem 1rem rgb(29, 21, 21);
 }
@@ -44,9 +44,13 @@ html,
   --h5: 1rem;
 }
 .warm {
-  --primary: var var(--light-red)
+  --primary: var var(--light-red);
+  --secondary: var(var(--dark-red));
 }
-
+.cool {
+  --primary: var (var(--light-blue));
+  --secondary: var(--dark-blue);
+}
 .hero {
   background-color: var(--primary);
 }
