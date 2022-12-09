@@ -20,10 +20,6 @@ html,
   transform: translateX(-0.3rem);
   box-shadow: 0 1rem 1rem rgb(28, 22, 22);
 }
-.btn:active {
-  transform: translateX(-1px);
-  box-shadow: 0 0.5rem 1rem rgb(29, 21, 21);
-}
 
 :root {
   --black: #000;
@@ -72,5 +68,11 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
+}
+
+.display-card {
+  color: --black;
+  background-color: var(--dark-blue);
+  background: linear-gradient();
 }
 

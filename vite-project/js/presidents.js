@@ -59,5 +59,35 @@ const presidents = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
   },
+  {
+    name: "John Tyler",
+    alive: "false",
+    presidentnumber: "10",
+    presidency: [1841, 1845],
+    militarybackground: "True",
+    age: "71",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/John_Tyler_%28cropped_3x4%29.png/220px-John_Tyler_%28cropped_3x4%29.png",
+  },
+  {
+    name: "Bill Clinton",
+    alive: "true",
+    presidentnumber: "42",
+    presidency: [1993, 2001],
+    militarybackground: "false",
+    age: "76",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/220px-Bill_Clinton.jpg",
+  },
+  {
+    name: "Franklin Pierce",
+    alive: "false",
+    presidentnumber: "14",
+    presidency: [1853, 1857],
+    militarybackground: "true",
+    age: "64",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg/220px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg",
+  },
 ];
 console.log(presidents);

@@ -8,10 +8,10 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-const DOM = {
-  submit: document.querySelector("#"),
-  box: document.querySelector("#"),
-  imput: document.querySelector("."),
-};
+// const DOM = {
+//   submit: document.querySelector("#"),
+//   box: document.querySelector("#"),
+//   imput: document.querySelector("."),
+// };
 
-export { DOM };
+// export { DOM };
