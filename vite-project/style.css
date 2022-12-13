@@ -8,79 +8,85 @@ html,
   text-align: center;
 } */
 
-body {
-  background-color: #f5f7fa;
+body, 
+html,
+* {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   transition: all ease-in-out 0.3s;
-  min-height: 100vh;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+  text-align: center;
 }
 
-body.dark-theme {
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+  border-radius: 1rem;
   background-color: #333;
 }
+.btn:hover {
+  transform: translateX(-0.3rem);
+  box-shadow: 0 1rem 1rem rgb(28, 22, 22);
+}
+
+
+:root {
+  --black: #000;
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --gray: #252c30;
+
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue); 
+
+  --h1: 7rem;
+  --h2: 5rem;
+  --h3: 3rem;
+  --h4: 2rem;
+  --h5: 1rem;
+}
+
+.warm {
+  --primary:  var(--light-red);
+  --secondary: var(--dark-red);
+}
+
+.cool {
+  --primary:  var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.hero {
+  background-color: var(--primary);
+  width: fit-content;
+}
+
+.main{
+  background-color: var(--secondary);
+  height: auto;
+}
+
 h1 {
-  color: #0054B0;
+  font-size: var(--h1);
 }
-
 h2 {
-  color: #0054B0;
+  font-size: var(--h2);
 }
-
 h3 {
-  color: #0054B0;
+  font-size: var(--h3);
 }
 h4 {
-  color: #0054B0;
+  font-size: var(--h4);
 }
-p {
-  letter-spacing: 3px;
-}
-
-body.dark-theme h2, body.dark-theme p {
-  color: #ddd;
-}
-
-.toggle input[type=checkbox] {
-  display: none;
-}
-
-.toggle label {
-  background-color: #777;
-  border: 2px solid #555;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: all ease-in-out 0.3s;
-  width: 75px;
-  height: 25px;
-}
-
-.toggle label::after {
-  background-color: #555;
-  border-radius: 50%;
-  content: ' ';
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  transition: all ease-in-out 0.5s;
-  width: 20px;
-  height: 20px;
-}
-
-.toggle input[type=checkbox]:checked ~ label {
-  background-color: #00a0fc;
-  border-color: #006dc9;
-}
-
-.toggle input[type=checkbox]:checked ~ label::after {
-  background-color: #0054B0;
-  transform: translateX(50px);
+h5 {
+font-size: var(--h5);
 }

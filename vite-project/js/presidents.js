@@ -91,3 +91,6 @@ const presidents = [
   },
 ];
 console.log(presidents);
+
+document.getElementById("presidents").innerHTML =
+  presidents.name + "," + presidents.age + "," + presidents.presidentnumber;
