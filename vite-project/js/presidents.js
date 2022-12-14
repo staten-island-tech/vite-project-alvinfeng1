@@ -1,9 +1,9 @@
-const presidents = [
+export const presidents = [
   {
     name: "George Washington",
     alive: "false",
     presidentnumber: "1",
-    presidency: [1789, 1797],
+    presidency: "1789, 1797",
     militarybackground: "true",
     age: "67",
     image:
@@ -90,7 +90,3 @@ const presidents = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg/220px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg",
   },
 ];
-console.log(presidents);
-
-document.getElementById("presidents").innerHTML =
-  presidents.name + "," + presidents.age + "," + presidents.presidentnumber;

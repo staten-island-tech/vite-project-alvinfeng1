@@ -1,18 +1,26 @@
-import { presidents } from "./presidents.js";
+import { presidents } from "./presidents";
 
-// function paintings() {
-//   presidents.display.insertAdjacentHTML(
-//     "afterbegin",
-//     `<div class = "display-card">
-//   <h2> Type:${h1}</h2>
-//   <br>
-//   <h2> Flavor:${h2}</h2>
-//   <br>`
-//   );
-// }
+// presidents
+//   .filter((presidents) => presidents.presidency <= 1800)
+//   .foreach((presidents) => {
+//     console.log(presidents.name);
+//   });
 
-presidents
-  .filter((presidents) => presidents.presidency <= 1800)
-  .foreach((presidents) => {
-    console.log(presidents.name);
-  });
+const presidents = {
+  Creation: function () {
+    Array.forEach((presidents) =>
+      DOM.Box.insertAdjacentHTML(
+        "beforeend",
+        `<div class="Card">
+          <h1>${presidents.name}</h1>
+          <img src="${presidents.image}">
+          <h2>${presidents.alive}</h2>
+          <h2>${presidents.presidentnumber}</h2>
+          <h2>${presidents.presidency}</h2>
+          <h2>${presidents.militarybackground}</h2>
+          <h2>${presidents.age}</h2>
+          </div>`
+      )
+    );
+  },
+};

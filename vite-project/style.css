@@ -22,16 +22,16 @@ html,
 }
 
 
-.btn,
-.btn:link,
-.btn:visited {
+#btn,
+#btn:link,
+#btn:visited {
   text-transform: uppercase;
   padding: 0.5rem 0.5rem;
   display: inline-block;
   border-radius: 1rem;
   background-color: #333;
 }
-.btn:hover {
+#btn:hover {
   transform: translateX(-0.3rem);
   box-shadow: 0 1rem 1rem rgb(28, 22, 22);
 }
@@ -89,4 +89,9 @@ h4 {
 }
 h5 {
 font-size: var(--h5);
+}
+
+.Card {
+  text-align: center;
+  font-size: 12rem;
 }
