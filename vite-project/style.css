@@ -94,4 +94,5 @@ font-size: var(--h5);
 .Card {
   text-align: center;
   font-size: 12rem;
+  border: 5px solis black;
 }

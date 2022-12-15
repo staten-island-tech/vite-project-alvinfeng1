@@ -1,10 +1,3 @@
-// const DOM = {
-//   theme: document.querySelector("#"),
-//   box: document.querySelector("#"),
-//   imput: document.querySelector("."),
-// };
-
-// export { DOM };
 function toggle() {
   document.getElementById(".btn").addEventListener("click", function () {
     if (document.body.classlist.contains("cool")) {

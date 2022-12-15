@@ -1,15 +1,16 @@
 import { presidents } from "./presidents";
+import { DOM } from "./dom";
 
-// presidents
-//   .filter((presidents) => presidents.presidency <= 1800)
-//   .foreach((presidents) => {
-//     console.log(presidents.name);
-//   });
+presidents
+  .filter((president) => president.presidency <= 1800)
+  .foreach((president) => {
+    console.log(president.name);
+  });
 
 const presidents = {
-  Creation: function () {
-    Array.forEach((presidents) =>
-      DOM.Box.insertAdjacentHTML(
+  function() {
+    forEach((presidents) =>
+      DOM.box.insertAdjacentHTML(
         "beforeend",
         `<div class="Card">
           <h1>${presidents.name}</h1>
