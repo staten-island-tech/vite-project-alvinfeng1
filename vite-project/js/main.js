@@ -1,13 +1,7 @@
 import { presidents } from "./presidents";
 import { DOM } from "./dom";
 
-presidents
-  .filter((president) => president.presidency <= 1800)
-  .foreach((president) => {
-    console.log(president.name);
-  });
-
-const presidents = {
+const president = {
   function() {
     forEach((presidents) =>
       DOM.box.insertAdjacentHTML(
@@ -26,13 +20,12 @@ const presidents = {
   },
 };
 
-  DOM.btn.addEventListener("click", function () {
-    if (document.body.classList.contains("cool")) {
-      document.body.classList.add("warm");
-      document.body.classList.remove("cool");
-    } else {
-      document.body.classList.add("cool");
-      document.body.classList.remove("warm");
-    }
-  });
-
+document.getElementById(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});

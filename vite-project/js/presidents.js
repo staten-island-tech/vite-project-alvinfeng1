@@ -1,4 +1,4 @@
-const presidents = [
+export const presidents = [
   {
     name: "George Washington",
     alive: "false",
@@ -90,5 +90,3 @@ const presidents = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg/220px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg",
   },
 ];
-
-export { presidents };

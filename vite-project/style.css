@@ -17,7 +17,6 @@ html,
   flex-direction: column;
   transition: all ease-in-out 0.3s;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: white;
   text-align: center;
 }
 
@@ -38,15 +37,21 @@ html,
 
 
 :root {
-  --black: #000;
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-  --gray: #252c30;
 
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue); 
+  --cool-background: rgb(32, 45, 186);
+  --cool-header: rgb(76, 88, 225); 
+  --cool-font: rgb(44, 52, 141);
+  --cool-button:rgb(17, 34, 218);
+  
+  --dark-background: 
+  --dark-header: 
+  --dark-font:
+  --dark-button:
+
+  --header: 
+  --background:
+  --font:
+  --button: 
 
   --h1: 7rem;
   --h2: 5rem;
@@ -68,6 +73,7 @@ html,
 .hero {
   background-color: var(--primary);
   width: fit-content;
+  font-size: var(--h1);
 }
 
 .main{
