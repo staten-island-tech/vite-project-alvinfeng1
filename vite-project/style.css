@@ -21,6 +21,7 @@ html,
   background-color: #333;
   width: 15vh;
   margin-bottom: 20px;
+  color: white;
 }
 .btns:hover {
   transform: translateX(-0.3rem);
@@ -38,8 +39,6 @@ html,
   --dark-font: rgb(0, 0, 0);
   --dark-button:rgb(44, 23, 23);
 
-  --background: rgb(8, 145, 219);
-
   --h1: 7rem;
   --h2: 5rem;
   --h3: 3rem;
@@ -49,18 +48,16 @@ html,
 
 .warm {
 background: var(--dark-background) ;
-header: var(--dark-header);
 font: var(--dark-font);
 }
 
 .cool {
   background: var(--cool-background) ;
-  header: var(--cool-header);
   font: var(--cool-font);
 }
 
 .hero {
-  background-color: var(--background);
+  background-color: var(--cool-background);
   width: fit-content;
   font-size: var(--h1);
   border-radius: 20px;
