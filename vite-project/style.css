@@ -87,6 +87,7 @@ font-size: var(--h5);
   flex-direction: row; 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 img {
@@ -95,6 +96,7 @@ img {
 }
 
 .Card {
-  border-radius: 10px black;
+  border-radius: 1rem;
   border: 3px solid black;
+  
 }
