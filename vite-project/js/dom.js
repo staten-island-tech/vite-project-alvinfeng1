@@ -1,5 +1,5 @@
 const DOM = {
-  box: document.getElementById("box"),
+  box: document.querySelector(".box"),
 };
 
 export { DOM };
