@@ -9,6 +9,7 @@ function pres() {
           <h2>${president.name}</h2>
           <img src="${president.image}">
           <h2>${president.alive}</h2>
+          <h2>${president.price}</h2>
           <h3>${president.presidentnumber}</h3>
           <h3>${president.presidency}</h3>
           <h4>${president.militarybackground}</h4>
@@ -21,10 +22,21 @@ function pres() {
 pres();
 document.getElementById("btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
+    document.body.classList.add("dark");
     document.body.classList.remove("cool");
   } else {
     document.body.classList.add("cool");
-    document.body.classList.remove("warm");
+    document.body.classList.remove("dark");
   }
 });
+
+alive();
+document.getElementById("aliveBtn").addEventListener("click", function () {
+  presidents
+    .filter((president) => president.alive === true)
+    .forEach((president) => {
+      console.log(president.alive);
+    });
+});
+
+dead();

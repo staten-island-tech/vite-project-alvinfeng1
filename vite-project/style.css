@@ -40,30 +40,31 @@ html,
 
   --header: rgb(20, 185, 194);
 
-  --h1: 7rem;
-  --h2: 5rem;
-  --h3: 3rem;
-  --h4: 2rem;
-  --h5: 1rem;
+  --h1: 35px;
+  --h2: 30px;
+  --h3: 20px;
+  --h4: 18px;
+  --h5: 15px;
 }
 
-.warm {
-background: var(--dark-background) ;
+.dark {
+background-color: var(--dark-background) ;
 font: var(--dark-font);
 
 }
 
 .cool {
-  background: var(--cool-background) ;
+  background-color: var(--cool-background) ;
   font: var(--cool-font);
 
 }
 
 .hero {
-  background-color: var(--cool-background);
+  background-color: var(--cool-background) ;
   width: fit-content;
-  font-size: var(--h1);
+  font-size: 7rem;
   border-radius: 20px;
+  margin: auto;
 }
 
 h1 {
@@ -88,6 +89,8 @@ font-size: var(--h5);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
 }
 
 img {
@@ -98,5 +101,6 @@ img {
 .Card {
   border-radius: 1rem;
   border: 3px solid black;
-  
+  width: 30%;
+  margin-top: 20px;
 }
