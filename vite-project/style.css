@@ -38,33 +38,37 @@ html,
   --dark-font: rgb(0, 0, 0);
   --dark-button:rgb(44, 23, 23);
 
-  --header: rgb(20, 185, 194);
+  --background: rgb(50, 110, 50);
+  --header: white; 
+  --font: black;
+  --button: blue;
 
   --h1: 35px;
   --h2: 30px;
-  --h3: 20px;
-  --h4: 18px;
-  --h5: 15px;
+  --h3: 25px;
+  --h4: 23px;
+  --h5: 20px;
 }
 
 .dark {
 background-color: var(--dark-background) ;
 font: var(--dark-font);
-
+header: var(--dark-header);
 }
 
 .cool {
   background-color: var(--cool-background) ;
   font: var(--cool-font);
-
+  header: var(--cool-header);
 }
 
 .hero {
-  background-color: var(--cool-background) ;
   width: fit-content;
   font-size: 7rem;
   border-radius: 20px;
   margin: auto;
+  background-color: var(--header);
+  color:
 }
 
 h1 {
@@ -103,4 +107,8 @@ img {
   border: 3px solid black;
   width: 30%;
   margin-top: 20px;
+}
+
+.btns {
+  --font: var(--button)
 }
