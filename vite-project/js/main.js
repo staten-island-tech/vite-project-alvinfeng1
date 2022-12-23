@@ -1,7 +1,26 @@
 import { presidents } from "./presidents";
 import { DOM } from "./dom";
 
-document.querySelector("#allBtn").addEventListener("click", function () {
+president();
+function president() {
+  presidents.forEach((president) => {
+    DOM.box.insertAdjacentHTML(
+      "beforeend",
+      `<div class="Card">
+        <h2>${president.name}</h2>
+        <img src="${president.image}">
+        <h2>${president.alive}</h2>
+        <h2>${president.price}</h2>
+        <h3>${president.presidentnumber}</h3>
+        <h3>${president.presidency}</h3>
+        <h4>${president.militarybackground}</h4>
+        <h5>${president.age}</h5>
+        </div>`
+    );
+  });
+}
+
+function all() {
   presidents.forEach((president) => {
     DOM.box.insertAdjacentHTML(
       "beforeend",
@@ -17,6 +36,11 @@ document.querySelector("#allBtn").addEventListener("click", function () {
           </div>`
     );
   });
+}
+
+document.querySelector("#allBtn").addEventListener("click", function () {
+  DOM.box.innerHTML = ``;
+  all(presidents);
 });
 
 document.getElementById("btn").addEventListener("click", function () {
@@ -117,3 +141,5 @@ document.querySelector("#bornBtn").addEventListener("click", function () {
       );
     });
 });
+
+all();

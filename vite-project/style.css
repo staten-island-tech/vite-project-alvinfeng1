@@ -3,7 +3,6 @@ html,
 * {
   align-items: center;
   justify-content: center;
-  transition: all ease-in-out 0.5s; 
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   flex-direction: column; 
@@ -31,17 +30,10 @@ html,
   --cool-background: rgb(153, 158, 239);
   --cool-header: rgb(76, 88, 225); 
   --cool-font: rgb(44, 52, 141);
-  --cool-button:rgb(17, 34, 218);
   
   --dark-background: rgb(53, 43, 43);
   --dark-header: rgb(61, 54, 54);
-  --dark-font: rgb(0, 0, 0);
-  --dark-button:rgb(44, 23, 23);
-
-  --background: rgb(50, 110, 50);
-  --header: white; 
-  --font: black;
-  --button: blue;
+  --dark-font: rgb(255, 255, 255);
 
   --h1: 35px;
   --h2: 30px;
@@ -52,13 +44,13 @@ html,
 
 .dark {
 background-color: var(--dark-background) ;
-font: var(--dark-font);
+color: var(--dark-font);
 header: var(--dark-header);
 }
 
 .cool {
   background-color: var(--cool-background) ;
-  font: var(--cool-font);
+  color: var(--cool-font);
   header: var(--cool-header);
 }
 
@@ -67,8 +59,7 @@ header: var(--dark-header);
   font-size: 7rem;
   border-radius: 20px;
   margin: auto;
-  background-color: var(--header);
-  color:
+  border: 3px solid black;
 }
 
 h1 {
@@ -105,10 +96,7 @@ img {
 .Card {
   border-radius: 1rem;
   border: 3px solid black;
-  width: 30%;
+  width: 25%;
+  height: fit-content;
   margin-top: 20px;
-}
-
-.btns {
-  --font: var(--button)
 }
